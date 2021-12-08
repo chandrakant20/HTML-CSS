@@ -1,0 +1,134 @@
+/* Element selector */
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+    font-family: sans-serif;
+    color: #444;
+}
+
+h1,
+h2,
+h3 {
+    color: #1090ad;
+}
+
+/* It will select all the h1 element in the html file */
+h1 {
+    font-size: 26px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* The element inside will inherit the style of parent element */
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+li {
+    font-size: 18px;
+}
+
+/* decendent selector */
+/* footer p {
+    font-size: 16px;
+} */
+
+/* ID and Class Selector */
+/* ID Selector */
+
+/* We can not use same id name to different html tags */
+#author {
+    font-style: italic;
+    font-size: 16px;
+}
+
+#copyright {
+    font-size: 14px;
+}
+
+/* Class Selector */
+.related-author {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.related-posts {
+    list-style: none;
+}
+
+header {
+    background-color: #f7f7f7;
+}
+
+aside {
+    background-color: #f7f7f7;
+    border-top: solid 3px #1090ad;
+    border-bottom: solid 3px #1090ad;
+}
+
+/* Pseudo Classes */
+li:first-child {
+    font-weight: bold;
+}
+
+li:last-child {
+    font-style: italic;
+}
+
+/* nth child. we can specify odd or even */
+li:nth-child(2) {
+    color: rebeccapurple;
+}
+
+article p:last-child {
+    color: red;
+}
+
+/* Styling Link */
+a {
+    color: #1090ad;
+    text-decoration: none;
+}
+
+a:hover {
+    color: orangered;
+    font-weight: bold;
+    text-decoration: underline orangered;
+}
+
+a:active {
+    background-color: blueviolet;
+    font-style: italic;
+}
+
+/* Priority of Selector */
+/* 1. Inline Style */
+
+/* 2. Id selector */
+/* Lat selector in the code will be applied */
+
+/* 3. Class selector */
+/* Lat selector in the code will be applied */
+
+/* 4. Element Selector */
+/* Lat selector in the code will be applied */
+
+/* 5. Universal Selector */
